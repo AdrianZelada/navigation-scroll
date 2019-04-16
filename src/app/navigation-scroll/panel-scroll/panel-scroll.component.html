@@ -1,0 +1,12 @@
+<div class="content-scroll">
+  <div #panel class="content-panel">
+    <ng-content></ng-content>
+    <div [style.height]="heightSpace"></div>
+  </div>
+  <div #nav class="content-nav">
+      <app-nav-scroll [navs]="listNav" (select)="selectNav($event)" [validated]="validated"></app-nav-scroll>
+      <ng-content select="app-footer-nav"></ng-content>
+  </div>
+</div>
+
+

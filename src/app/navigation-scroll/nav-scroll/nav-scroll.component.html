@@ -1,0 +1,5 @@
+<ul>
+  <li *ngFor="let item of navs" (click)="selectNav(item)" [ngClass]="{'active': item.active, 'focus': (item.focus && validated)}">
+    {{item.name}}
+  </li>
+</ul>

@@ -1,0 +1,15 @@
+.content-scroll{
+  width: 100%;
+  .content-panel{
+    width: 70%;
+    background: lightgrey;
+    float: left;
+    height: 350px;
+    overflow-y: auto;
+  }
+  .content-nav{
+    width: 30%;
+    background: gray;
+    float: right;
+  }
+}

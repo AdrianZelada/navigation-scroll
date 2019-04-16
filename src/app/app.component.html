@@ -1,0 +1,70 @@
+<form action="" [formGroup]="form">
+  <app-panel-scroll>
+    <app-section-panel [name]="'Persona 1'" [active]="true" [focus]="!form.controls.group1.valid">
+      <div class="form-group form-group-default" formGroupName="group1">
+        <label class="control-label">Nombre</label>
+        <div class="input-group">
+          <input type="text" class="form-control" formControlName="name">
+        </div>
+        <label class="control-label">Apellido</label>
+        <div class="input-group">
+          <input type="text" class="form-control" formControlName="lastName">
+        </div>
+        <label class="control-label">Curso</label>
+        <div class="input-group">
+          <input type="text" class="form-control" formControlName="course">
+        </div>
+        <label class="control-label">Apodo</label>
+        <div class="input-group">
+          <input type="text" class="form-control" formControlName="nickname">
+        </div>
+      </div>
+    </app-section-panel>
+
+    <app-section-panel [name]="'Persona 2'" [active]="true" [focus]="!form.controls.group2.valid">
+      <div class="form-group form-group-default" formGroupName="group2">
+        <label class="control-label">Nombre</label>
+        <div class="input-group">
+          <input type="text" class="form-control" formControlName="name">
+        </div>
+        <label class="control-label">Apellido</label>
+        <div class="input-group">
+          <input type="text" class="form-control" formControlName="lastName">
+        </div>
+        <label class="control-label">Curso</label>
+        <div class="input-group">
+          <input type="text" class="form-control" formControlName="course">
+        </div>
+        <label class="control-label">Apodo</label>
+        <div class="input-group">
+          <input type="text" class="form-control" formControlName="nickname">
+        </div>
+      </div>
+    </app-section-panel>
+
+    <app-section-panel [name]="'Persona 3'" [active]="true" [focus]="!form.controls.group3.valid">
+      <div class="form-group form-group-default" formGroupName="group3">
+        <label class="control-label">Nombre</label>
+        <div class="input-group">
+          <input type="text" class="form-control" formControlName="name">
+        </div>
+        <label class="control-label">Apellido</label>
+        <div class="input-group">
+          <input type="text" class="form-control" formControlName="lastName">
+        </div>
+        <label class="control-label">Curso</label>
+        <div class="input-group">
+          <input type="text" class="form-control" formControlName="course">
+        </div>
+        <label class="control-label">Apodo</label>
+        <div class="input-group">
+          <input type="text" class="form-control" formControlName="nickname">
+        </div>
+      </div>
+    </app-section-panel>
+
+    <app-footer-nav>
+      <button class="btn btn-success" (click)="saveData()"> Aceptar </button>
+    </app-footer-nav>
+  </app-panel-scroll>
+</form>
